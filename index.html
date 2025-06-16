@@ -1,81 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Knowledgebase - CES</title>
+  <title>CES Knowledgebase Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background-color: #f9f9f9;
+      margin: 0;
+      background-color: #f4f6f9;
+      font-family: 'Inter', sans-serif;
+      color: #2e3a59;
     }
-    h1 {
-      color: #222;
+
+    header {
+      background-color: #1e70bf;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      font-size: 1.1em;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
     h2 {
-      color: #0077cc;
-      margin-top: 40px;
+      color: #1e70bf;
+      font-size: 22px;
+      border-bottom: 2px solid #e0e6ed;
+      padding-bottom: 6px;
+      margin-top: 50px;
+      margin-bottom: 20px;
     }
+
     ul {
-      padding-left: 20px;
+      list-style: none;
+      padding-left: 0;
     }
+
     li {
-      margin-bottom: 10px;
+      background: #fff;
+      margin-bottom: 12px;
+      padding: 14px 18px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      transition: box-shadow 0.2s ease;
     }
+
+    li:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
     a {
-      color: #0366d6;
+      color: #1e70bf;
       text-decoration: none;
+      font-weight: 600;
+      display: block;
     }
+
     a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
+      .intro {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Knowledgebase - CES</h1>
-  <p style="font-size: 1.1em; line-height: 1.6;">
-    Welcome to the <strong>CES Knowledgebase</strong> — a centralized gateway to everything you need to operate, integrate, and master our security and building technologies. Whether you're deploying advanced surveillance, managing access control, or troubleshooting field installations, this portal is designed to equip you with the tools, documentation, and training to succeed.
-  </p>
-  <p style="font-size: 1.1em; line-height: 1.6;">
-    This dynamic library is curated for engineers, technicians, and decision-makers who demand clarity and precision — housing official product manuals, interactive trainings, and real-world how-to videos from trusted platforms like Axis Communications and Network Optix.
-  </p>
-  <p style="font-size: 1.1em; line-height: 1.6;">
-    <em>Empower your team. Streamline your support. Deliver Solutions to the Customers.</em> Everything starts here.
-  </p>
+  <header>
+    <h1>CES Knowledgebase Portal</h1>
+  </header>
 
-  <h2>📚 Axis Training Modules (Web-based)</h2>
-  <ul>
-    <li><a href="https://www.axis.com/learning/elearning/axis-screencast-simulation-axis-camera-station" target="_blank">Axis Screencast Simulation: AXIS Camera Station (1)</a></li>
-    <li><a href="https://www.axis.com/learning/elearning/axis-screencast-simulation-axis-camera-station" target="_blank">Axis Screencast Simulation: AXIS Camera Station (2)</a></li>
-    <li><a href="https://www.axis.com/learning/elearning/get-to-know-axis-camera-station-edge" target="_blank">Get to know AXIS Camera Station Edge</a></li>
-    <li><a href="https://www.axis.com/learning/academy/elearning/get-to-know-axis-camera-station-pro" target="_blank">Get to know AXIS Camera Station Pro</a></li>
-    <li><a href="https://www.axis.com/learning/academy/elearning/get-to-know-axis-camera-station-end-to-end-solutions" target="_blank">Get to know AXIS Camera Station End-to-End Solutions</a></li>
-    <li><a href="https://www.axis.com/learning/academy/elearning/get-to-know-axis-network-camera-naming-convention" target="_blank">Get to know Axis Network Camera Naming Convention</a></li>
-  </ul>
+  <div class="container">
+    <div class="intro">
+      <p><strong>Welcome to the CES Knowledgebase</strong> — your centralized gateway to everything you need to operate, integrate, and master our security and building technologies.</p>
+      <p>This curated library supports engineers, technicians, and decision-makers by providing access to product manuals, trainings, and how-to videos from trusted platforms like Axis Communications and Network Optix.</p>
+      <p><em>Empower your team. Streamline your support. Deliver Solutions to the Customers.</em></p>
+    </div>
 
-  <h2>📹 Network Optix - YouTube Video Tutorials</h2>
-  <ul>
-    <li><a href="https://www.youtube.com/watch?v=dBDpd2XPPJc" target="_blank">How To Add IP Camera To Network Optix</a></li>
-    <li><a href="https://www.youtube.com/watch?v=GABaXENu2HY" target="_blank">Camera Replacement Nx v5.1</a></li>
-    <li><a href="https://www.youtube.com/watch?v=-4in5wUm7h8" target="_blank">Nx Witness - Set up Cameras and Configure Recording</a></li>
-    <li><a href="https://www.youtube.com/watch?v=LOZg0hK4ch8" target="_blank">Nx Witness 2.6 - Creating a map with cameras</a></li>
-    <li><a href="https://www.youtube.com/watch?v=4DrJCZJcGUY" target="_blank">Nx Witness - Enhanced Export</a></li>
-    <li><a href="https://www.youtube.com/watch?v=efMwvtJCDf4" target="_blank">Nx Witness v4.2 - New Fisheye Dewarping Options</a></li>
-    <li><a href="https://www.youtube.com/watch?v=nVKOVxQdZxw" target="_blank">Nx Witness - Bitrate Throttling</a></li>
-    <li><a href="https://www.youtube.com/watch?v=buSHAjJPVVQ" target="_blank">Nx Witness - Encrypted Video & Connections</a></li>
-    <li><a href="https://www.youtube.com/watch?v=t97342b9Pxk" target="_blank">18 - Adding Users - Nx Operator Certification</a></li>
-    <li><a href="https://www.youtube.com/watch?v=BnKWUgY3Njs" target="_blank">Nx Witness - Automatic Failover</a></li>
-  </ul>
+    <h2>📚 Axis Training Modules (Web-based)</h2>
+    <ul>
+      <li><a href="https://www.axis.com/learning/elearning/axis-screencast-simulation-axis-camera-station" target="_blank">Axis Screencast Simulation: AXIS Camera Station (1)</a></li>
+      <li><a href="https://www.axis.com/learning/elearning/axis-screencast-simulation-axis-camera-station" target="_blank">Axis Screencast Simulation: AXIS Camera Station (2)</a></li>
+      <li><a href="https://www.axis.com/learning/elearning/get-to-know-axis-camera-station-edge" target="_blank">Get to know AXIS Camera Station Edge</a></li>
+      <li><a href="https://www.axis.com/learning/academy/elearning/get-to-know-axis-camera-station-pro" target="_blank">Get to know AXIS Camera Station Pro</a></li>
+      <li><a href="https://www.axis.com/learning/academy/elearning/get-to-know-axis-camera-station-end-to-end-solutions" target="_blank">Get to know AXIS Camera Station End-to-End Solutions</a></li>
+      <li><a href="https://www.axis.com/learning/academy/elearning/get-to-know-axis-network-camera-naming-convention" target="_blank">Get to know Axis Network Camera Naming Convention</a></li>
+    </ul>
 
-  <h2>📄 PDF Manuals</h2>
-  <ul>
-    <li><a href="CDVI_CA-A470-A_Diagram.pdf" target="_blank">CDVI CA-A470-A Diagram</a></li>
-    <li><a href="CDVI_CA-A470-A_IE.pdf" target="_blank">CDVI CA-A470-A Installation Guide</a></li>
-    <li><a href="CDVI_CT-V900-A_Diagram.pdf" target="_blank">CDVI CT-V900-A Diagram</a></li>
-    <li><a href="CDVI_CT-V900-A_IE05.pdf" target="_blank">CDVI CT-V900-A Installation Guide</a></li>
-    <li><a href="LiNC-NXG-Installation Manual.pdf" target="_blank">LiNC-NXG Installation Manual</a></li>
-  </ul>
+    <h2>📹 Network Optix – YouTube Video Tutorials</h2>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=dBDpd2XPPJc" target="_blank">How To Add IP Camera To Network Optix</a></li>
+      <li><a href="https://www.youtube.com/watch?v=GABaXENu2HY" target="_blank">Camera Replacement Nx v5.1</a></li>
+      <li><a href="https://www.youtube.com/watch?v=-4in5wUm7h8" target="_blank">Nx Witness – Set up Cameras and Configure Recording</a></li>
+      <li><a href="https://www.youtube.com/watch?v=LOZg0hK4ch8" target="_blank">Nx Witness 2.6 – Creating a Map with Cameras</a></li>
+      <li><a href="https://www.youtube.com/watch?v=4DrJCZJcGUY" target="_blank">Nx Witness – Enhanced Export</a></li>
+      <li><a href="https://www.youtube.com/watch?v=efMwvtJCDf4" target="_blank">Nx Witness v4.2 – New Fisheye Dewarping Options</a></li>
+      <li><a href="https://www.youtube.com/watch?v=nVKOVxQdZxw" target="_blank">Nx Witness – Bitrate Throttling</a></li>
+      <li><a href="https://www.youtube.com/watch?v=buSHAjJPVVQ" target="_blank">Nx Witness – Encrypted Video & Connections</a></li>
+      <li><a href="https://www.youtube.com/watch?v=t97342b9Pxk" target="_blank">18 – Adding Users – Nx Operator Certification</a></li>
+      <li><a href="https://www.youtube.com/watch?v=BnKWUgY3Njs" target="_blank">Nx Witness – Automatic Failover</a></li>
+    </ul>
+
+    <h2>📄 PDF Manuals</h2>
+    <ul>
+      <li><a href="CDVI_CA-A470-A_Diagram.pdf" target="_blank">CDVI CA-A470-A Diagram</a></li>
+      <li><a href="CDVI_CA-A470-A_IE.pdf" target="_blank">CDVI CA-A470-A Installation Guide</a></li>
+      <li><a href="CDVI_CT-V900-A_Diagram.pdf" target="_blank">CDVI CT-V900-A Diagram</a></li>
+      <li><a href="CDVI_CT-V900-A_IE05.pdf" target="_blank">CDVI CT-V900-A Installation Guide</a></li>
+      <li><a href="LiNC-NXG-Installation Manual.pdf" target="_blank">LiNC-NXG Installation Manual</a></li>
+    </ul>
+  </div>
 </body>
 </html>
